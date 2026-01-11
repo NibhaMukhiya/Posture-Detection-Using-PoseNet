@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Posture Detection (PoseNet)</title>
+
+  <!-- p5.js -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.min.js"></script>
+
+  <!-- ml5.js -->
+  <script src="https://unpkg.com/ml5@0.12.2/dist/ml5.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      text-align: center;
+      background: #111;
+      color: white;
+    }
+    canvas {
+      margin-top: 10px;
+    }
+
+    #loadingScreen {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial;
+      font-size: 18px;
+      z-index: 9999;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Posture Detection</h2>
+
+  <!-- Loading Screen -->
+  <div id="loadingScreen">
+    ⏳ Loading... <br><br>
+    📸 Please allow camera permission
+  </div>
+
+  <script src="index2.js"></script>
+
+</body>
+</html>
